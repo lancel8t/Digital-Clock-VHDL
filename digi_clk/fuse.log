@@ -1,0 +1,20 @@
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o D:/digi/digi_clk/seven4_isim_beh.exe -prj D:/digi/digi_clk/seven4_beh.prj work.seven4 
+ISim O.61xd (signature 0x6dd86d03)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/digi/digi_clk/mo.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 59296 KB
+Fuse CPU Usage: 109 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity seven4
+Time Resolution for simulation is 1ps.
+Compiled 5 VHDL Units
+Built simulation executable D:/digi/digi_clk/seven4_isim_beh.exe
+Fuse Memory Usage: 75236 KB
+Fuse CPU Usage: 234 ms

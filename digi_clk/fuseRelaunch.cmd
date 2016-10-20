@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "D:/digi/digi_clk/seven4_isim_beh.exe" -prj "D:/digi/digi_clk/seven4_beh.prj" "work.seven4" 

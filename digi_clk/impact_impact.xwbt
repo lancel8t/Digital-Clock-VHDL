@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\digi\digi_clk\impact.xsl
+OUTFILE=D:\digi\digi_clk\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=D:\digi\digi_clk
+LICENSE=iMPACT
+USER_INFO=iMPACT

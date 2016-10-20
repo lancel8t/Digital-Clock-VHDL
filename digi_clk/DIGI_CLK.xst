@@ -1,0 +1,5 @@
+set -tmpdir "D:/digi/digi_clk/xst/projnav.tmp"
+set -xsthdpdir "D:/digi/digi_clk/xst"
+elaborate
+-ifn DIGI_CLK.prj
+-ifmt mixed

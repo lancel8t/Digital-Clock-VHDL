@@ -1,0 +1,269 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.06 secs
+ 
+--> Reading design: DIGI_CLK.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DIGI_CLK.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DIGI_CLK"
+Output Format                      : NGC
+Target Device                      : xc3s50-5-tq144
+
+---- Source Options
+Top Module Name                    : DIGI_CLK
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/digi/digi_clk/digi.vhd" in Library work.
+Entity <digi_clk> compiled.
+Entity <digi_clk> (Architecture <xyz>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DIGI_CLK> in library <work> (architecture <xyz>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <DIGI_CLK> in library <work> (Architecture <xyz>).
+INFO:Xst:2679 - Register <digit> in unit <DIGI_CLK> has a constant value of 0000000 during circuit operation. The register is replaced by logic.
+Entity <DIGI_CLK> analyzed. Unit <DIGI_CLK> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <DIGI_CLK>.
+    Related source file is "D:/digi/digi_clk/digi.vhd".
+    Found finite state machine <FSM_0> for signal <c>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 11                                             |
+    | Clock              | newclk1                   (rising_edge)        |
+    | Reset              | c$cmp_eq0000              (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000000000000000000000000000001               |
+    | Power Up State     | 00000000000000000000000000000000               |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit register for signal <disp>.
+    Found 7-bit register for signal <digit>.
+    Found 7-bit register for signal <digit1>.
+    Found 7-bit register for signal <digit2>.
+    Found 7-bit register for signal <digit3>.
+    Found 7-bit register for signal <digit4>.
+    Found 1-bit register for signal <newclk>.
+    Found 1-bit register for signal <newclk1>.
+    Found 32-bit adder for signal <newclk1$add0000> created at line 29.
+    Found 32-bit up counter for signal <t1>.
+    Found 32-bit adder for signal <t1$add0000> created at line 55.
+    Found 32-bit adder for signal <t1$add0001> created at line 52.
+    Found 32-bit adder for signal <t1$add0002> created at line 49.
+    Found 32-bit adder for signal <t1$addsub0000> created at line 58.
+    Found 32-bit up counter for signal <t2>.
+    Found 32-bit up counter for signal <t3>.
+    Found 32-bit up counter for signal <t4>.
+    Found 32-bit up counter for signal <temp1>.
+    Found 32-bit adder for signal <temp1$add0000> created at line 28.
+    Found 32-bit up counter for signal <temp2>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   6 Counter(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   6 Adder/Subtractor(s).
+Unit <DIGI_CLK> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 6
+# Counters                                             : 6
+ 32-bit up counter                                     : 6
+# Registers                                            : 8
+ 1-bit register                                        : 2
+ 4-bit register                                        : 1
+ 7-bit register                                        : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <c/FSM> on signal <c[1:4]> with one-hot encoding.
+----------------------------------------------
+ State                            | Encoding
+----------------------------------------------
+ 00000000000000000000000000000000 | 0001
+ 00000000000000000000000000000001 | 0010
+ 00000000000000000000000000000010 | 0100
+ 00000000000000000000000000000011 | 1000
+----------------------------------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 6
+# Counters                                             : 6
+ 32-bit up counter                                     : 6
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <DIGI_CLK> on signal <digit<6>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <digit_6>
+   Signal <digit<6>> in Unit <DIGI_CLK> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <DIGI_CLK> on signal <digit<5>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <digit_5>
+   Signal <digit<5>> in Unit <DIGI_CLK> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <DIGI_CLK> on signal <digit<4>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <digit_4>
+   Signal <digit<4>> in Unit <DIGI_CLK> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <DIGI_CLK> on signal <digit<3>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <digit_3>
+   Signal <digit<3>> in Unit <DIGI_CLK> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <DIGI_CLK> on signal <digit<2>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <digit_2>
+   Signal <digit<2>> in Unit <DIGI_CLK> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <DIGI_CLK> on signal <digit<1>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <digit_1>
+   Signal <digit<1>> in Unit <DIGI_CLK> is assigned to GND
+
+ERROR:Xst:528 - Multi-source in Unit <DIGI_CLK> on signal <digit<0>>; this signal is connected to multiple drivers.
+Drivers are: 
+   Output signal of FDE instance <digit_0>
+   Signal <digit<0>> in Unit <DIGI_CLK> is assigned to GND
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.45 secs
+ 
+--> 
+
+Total memory usage is 138724 kilobytes
+
+Number of errors   :    7 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

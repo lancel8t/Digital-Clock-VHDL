@@ -1,0 +1,17 @@
+net "clk" loc = "p52";
+net "reset" loc = "p84";
+NET "X(3)" LOC= "P85";
+NET "X(2)" LOC= "P86";
+NET "X(1)" LOC= "P87";
+NET "X(0)" LOC= "P89";
+net "digit(0)" loc = "p18";
+net "digit(1)" loc = "p17";
+net "digit(2)" loc = "p15";
+net "digit(3)" loc = "p14";
+net "digit(4)" loc = "p13";
+net "digit(5)" loc = "p12";
+net "digit(6)" loc = "p1";
+net "disp(0)" loc = "p23";
+net "disp(1)" loc = "p24";
+net "disp(2)" loc = "p26";
+net "disp(3)" loc = "p27";

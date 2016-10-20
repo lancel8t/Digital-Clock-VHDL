@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\digi\digi_clk\seven4.ncd
+OUTFILE=D:\digi\digi_clk\seven4.bit
+FAMILY=Spartan3
+PART=xc3s400-5tq144
+WORKINGDIR=D:\digi\digi_clk
+LICENSE=WebPack
+USER_INFO=207362905_0_0_716

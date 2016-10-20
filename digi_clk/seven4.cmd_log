@@ -1,0 +1,40 @@
+xst -intstyle ise -ifn "D:/digi/digi_clk/seven4.xst" -ofn "D:/digi/digi_clk/seven4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-tq144-5 seven4.ngc seven4.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven4.ucf -p xc3s50-tq144-5 seven4.ngc seven4.ngd  
+map -intstyle ise -p xc3s50-tq144-5 -cm area -ir off -pr off -c 100 -o seven4_map.ncd seven4.ngd seven4.pcf 
+par -w -intstyle ise -ol high -t 1 seven4_map.ncd seven4.ncd seven4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seven4.twx seven4.ncd -o seven4.twr seven4.pcf -ucf seven4.ucf 
+bitgen -intstyle ise -f seven4.ut seven4.ncd 
+xst -intstyle ise -ifn "D:/digi/digi_clk/seven4.xst" -ofn "D:/digi/digi_clk/seven4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven4.ucf -p xc3s400-tq144-5 seven4.ngc seven4.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o seven4_map.ncd seven4.ngd seven4.pcf 
+par -w -intstyle ise -ol high -t 1 seven4_map.ncd seven4.ncd seven4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seven4.twx seven4.ncd -o seven4.twr seven4.pcf -ucf seven4.ucf 
+bitgen -intstyle ise -f seven4.ut seven4.ncd 
+xst -intstyle ise -ifn "D:/digi/digi_clk/seven4.xst" -ofn "D:/digi/digi_clk/seven4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven4.ucf -p xc3s400-tq144-5 seven4.ngc seven4.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o seven4_map.ncd seven4.ngd seven4.pcf 
+par -w -intstyle ise -ol high -t 1 seven4_map.ncd seven4.ncd seven4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seven4.twx seven4.ncd -o seven4.twr seven4.pcf -ucf seven4.ucf 
+bitgen -intstyle ise -f seven4.ut seven4.ncd 
+xst -intstyle ise -ifn "D:/digi/digi_clk/seven4.xst" -ofn "D:/digi/digi_clk/seven4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven4.ucf -p xc3s400-tq144-5 seven4.ngc seven4.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o seven4_map.ncd seven4.ngd seven4.pcf 
+par -w -intstyle ise -ol high -t 1 seven4_map.ncd seven4.ncd seven4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seven4.twx seven4.ncd -o seven4.twr seven4.pcf -ucf seven4.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven4.ucf -p xc3s400-tq144-5 seven4.ngc seven4.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o seven4_map.ncd seven4.ngd seven4.pcf 
+par -w -intstyle ise -ol high -t 1 seven4_map.ncd seven4.ncd seven4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seven4.twx seven4.ncd -o seven4.twr seven4.pcf -ucf seven4.ucf 
+bitgen -intstyle ise -f seven4.ut seven4.ncd 
+xst -intstyle ise -ifn "D:/digi/digi_clk/seven4.xst" -ofn "D:/digi/digi_clk/seven4.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven4.ucf -p xc3s400-tq144-5 seven4.ngc seven4.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o seven4_map.ncd seven4.ngd seven4.pcf 
+par -w -intstyle ise -ol high -t 1 seven4_map.ncd seven4.ncd seven4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seven4.twx seven4.ncd -o seven4.twr seven4.pcf -ucf seven4.ucf 
+bitgen -intstyle ise -f seven4.ut seven4.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seven4.ucf -p xc3s400-tq144-5 seven4.ngc seven4.ngd  
+map -intstyle ise -p xc3s400-tq144-5 -cm area -ir off -pr off -c 100 -o seven4_map.ncd seven4.ngd seven4.pcf 
+par -w -intstyle ise -ol high -t 1 seven4_map.ncd seven4.ncd seven4.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml seven4.twx seven4.ncd -o seven4.twr seven4.pcf -ucf seven4.ucf 
+bitgen -intstyle ise -f seven4.ut seven4.ncd 
